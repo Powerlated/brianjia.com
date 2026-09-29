@@ -1,13 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import icon from "astro-icon";
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://brianjia.com',
+
   integrations: [
-    tailwind(),
     icon({
       include: {
         tabler: ['*'],
@@ -24,5 +24,9 @@ export default defineConfig({
         ],
       },
     }),
-  ]
+  ],
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });
