@@ -9,7 +9,9 @@ import image1 from "../assets/fc.png";
 import image2 from "../assets/IMG_1044.jpg";
 import image3 from "../assets/vna.png";
 import image4 from "../assets/machining1.png";
-import image5 from "../assets/image.png";
+import image5 from "../assets/magnets.png";
+import image6 from "../assets/hfss.png";
+import image7 from "../assets/fintenna.png";
 ---
 
 <div id="container" class="p-4">
@@ -44,7 +46,9 @@ import image5 from "../assets/image.png";
     </p>
 
     <a href="/Brian Jia Resume 2026-09-23.pdf">
-      <div class="inline-block pr-6 pb-5 bg-red-700 text-white text-2xl font-bold px-4 py-4">
+      <div
+        class="inline-block pr-6 pb-5 bg-red-700 text-white text-2xl font-bold px-4 py-4"
+      >
         🔗 See my full resume (PDF)
       </div>
     </a>
@@ -57,12 +61,28 @@ import image5 from "../assets/image.png";
       <div class="my-4">
         <h4><i>Avionics Lead, May 2025 – April 2026</i></h4>
 
-        <p class="mt-1">I led the design and integration of all software and electronics on a competition sounding rocket that went to 20,000 ft in the Summer 2026, at the International Rocket Engineering Competition in Midland, Texas.</p>
+        <p class="mt-1">
+          I led the design and integration of all software and electronics on a
+          competition sounding rocket that went to 20,000 ft in the Summer 2026,
+          at the International Rocket Engineering Competition in Midland, Texas.
+        </p>
 
         <p class="mt-12">
-          Simulated and validated custom antennas and stock antenna placements
+          Designed, simulated and validated custom antennas and stock antenna placements
           for 433 MHz, 900 MHz bands.
         </p>
+        <Image
+          class="mx-auto mt-2 mb-4"
+          src={image7}
+          width="640"
+          alt="Fintenna"
+        />
+        <Image
+          class="mx-auto mt-2 mb-4"
+          src={image6}
+          width="640"
+          alt="Ansys HFSS"
+        />
         <Image class="mx-auto mt-2 mb-4" src={image3} width="640" alt="VNA" />
 
         <p class="mt-24">
@@ -101,7 +121,8 @@ import image5 from "../assets/image.png";
         />
 
         <p class="mt-24">
-          Tested magnetic arming systems to allow flight computers to be switched on while the rocket is mounted on the launch rail.
+          Tested magnetic arming systems to allow flight computers to be
+          switched on while the rocket is mounted on the launch rail.
         </p>
         <Image
           class="mx-auto mt-2 mb-4"
