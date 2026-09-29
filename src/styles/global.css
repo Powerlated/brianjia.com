@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer base {
+    h1 {
+        @apply text-4xl md:text-7xl mb-6 font-bold
+    }
+    h2 {
+        @apply text-xl md:text-2xl
+    }
+}
