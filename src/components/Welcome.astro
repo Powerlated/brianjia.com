@@ -1,19 +1,28 @@
 ---
 import astroLogo from "../assets/astro.svg";
+import { Image } from "astro:assets";
 import background from "../assets/background.svg";
 import { Icon } from "astro-icon/components";
 import "../styles/global.css";
+
+import image1 from "../assets/fc.png";
+import image2 from "../assets/IMG_1044.jpg";
+import image3 from "../assets/vna.png";
+import image4 from "../assets/machining1.png";
+import image5 from "../assets/image.png";
 ---
 
 <div id="container" class="p-4">
-  <div>
+  <div class="max-w-screen-sm mt-20">
     <h1>Hi, I'm Brian Jia</h1>
-    <h2>Electrical & Computer Engineering</h2>
-    <h2 class="mb-4">Senior</h2>
-    <h2 class="mb-2">
+    <h3>Electrical & Computer Engineering</h3>
+    <h3 class="mb-4">Senior</h3>
+    <h3 class="mb-2">
       at <b class="text-red-700">The Ohio State University</b>
-    </h2>
-    <p class="mb-8">Expected graduation in <b class="text-red-700">May 2027.</b></p>
+    </h3>
+    <p class="mb-8">
+      Expected graduation in <b class="text-red-700">May 2027.</b>
+    </p>
 
     <div class="text-muted">
       <a
@@ -29,15 +38,74 @@ import "../styles/global.css";
       </a>
     </div>
 
-    <p class="text-xl md:text-2xl text-bold text-muted mt-5 mb-10">
-      I make cool things!
+    <p class="text-xl md:text-2xl text-bold text-muted mt-5 mb-12">
+      I make cool things! Scroll down to see selections from my resume, in
+      portfolio form!
     </p>
 
-    <div class="bg-red-700 text-white text-2xl font-bold px-4 py-4">
-      Scroll down to see my resume, in portfolio form!
-    </div>
+    <a href="/Brian Jia Resume 2026-09-23.pdf">
+      <div class="inline-block pr-6 pb-5 bg-red-700 text-white text-2xl font-bold px-4 py-4">
+        🔗 See my full resume (PDF)
+      </div>
+    </a>
 
-    <p class="text-muted mt-2">Resume last updated on 9/29/2026.</p>
+    <!-- <p class="text-muted mt-2">Resume last updated on 9/29/2026.</p> -->
+
+    <div class="my-8 mt-20">
+      <h2>Engineering Experience</h2>
+      <h3>International Rocket Engineering Competition Team, OSU</h3>
+      <div class="my-4">
+        <h4><i>Avionics Lead, May 2025 – April 2026</i></h4>
+
+        <p class="mt-12">
+          Simulated and validated custom antennas and stock antenna placements
+          for 433 MHz, 900 MHz bands.
+        </p>
+        <Image class="mx-auto mt-2 mb-4" src={image3} width="640" alt="VNA" />
+
+        <p class="mt-24">
+          Designed guidance computer electrical schematics and PCBs; frequent
+          use of electronic test equipment including oscilloscope, power supply,
+          multimeter, VNA, etc. for validating embedded systems.
+        </p>
+        <Image
+          class="mx-auto mt-2 mb-4"
+          src={image1}
+          width="640"
+          alt="Flight Computer PCB"
+        />
+
+        <p class="mt-24">
+          Designed and validated low-noise DC-DC power converter circuits for
+          powering IMUs, A/D & D/A converters, control surface motors, and
+          low-noise transmission lines for GNSS.
+        </p>
+        <Image
+          class="mx-auto mt-2 mb-4"
+          src={image2}
+          width="640"
+          alt="Probing PCB"
+        />
+
+        <p class="mt-24">
+          Machined essential structural components for the rocket, including
+          bulkheads and solid rocket motor casing.
+        </p>
+        <Image
+          class="mx-auto mt-2 mb-4"
+          src={image4}
+          width="640"
+          alt="Machining"
+        />
+
+        <Image
+          class="mx-auto mt-26 mb-4"
+          src={image5}
+          width="640"
+          alt="Avionics bay in rocket"
+        />
+      </div>
+    </div>
   </div>
 </div>
 
@@ -46,6 +114,5 @@ import "../styles/global.css";
     display: flex;
     justify-content: center;
     align-items: center; /* Vertical alignment */
-    height: 100vh; /* Full viewport height (optional) */
   }
 </style>
